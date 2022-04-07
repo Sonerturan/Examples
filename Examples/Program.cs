@@ -12,6 +12,8 @@ namespace Examples
         {
             Console.WriteLine("s");
             Console.ReadKey();
+
+
         }
 
         public int MyProperty { get; set; }
