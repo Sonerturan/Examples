@@ -10,13 +10,25 @@ namespace Examples
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("s");
+            int sayi = 100;
+            int sayi1;
+            BiseyYap(ref sayi);
+            BiseyYap1(out sayi1);
+            Console.WriteLine(sayi);
+            Console.WriteLine(sayi1);
+
+
             Console.ReadKey();
-
-
         }
 
-        public int MyProperty { get; set; }
+        static void BiseyYap(ref int sayi)
+        {
+            sayi = 99;
+        }
+        static void BiseyYap1(out int sayi)
+        {
+            sayi = 99;
+        }
 
     }
 }
